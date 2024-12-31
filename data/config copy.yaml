@@ -1,0 +1,14 @@
+
+
+<div class="Products">
+  {{ range .Site.Data.Products.products }}
+  <div class="product">
+    <h4>{{ .name }}</h4>
+    <ul>
+      {{ range .options }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</div>

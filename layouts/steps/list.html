@@ -1,0 +1,22 @@
+<h1>{{ .Title }}</h1>
+<div class="steps">
+  {{ range .Pages }}
+  <div class="step">
+    <h3><a href="{{ .RelPermalink }}" target="{{ .Site.Params.internalLinkTarget }}">{{ .Title }}</a></h3>
+    
+    <p>{{ .Summary }}</p>
+  </div>
+  {{ end }}
+</div>
+
+
+{{ range .Params.steps }}
+  {{ $parts := split . " | " }}
+  <div class="step">
+    <h3>
+      Step {{ index $parts 0 }}:
+      <a href="/steps/step-{{ index $parts 0 }}">{{ index $parts 1 }}</a>
+    </h3>
+    <p>{{ index $parts 2 }}</p>
+  </div>
+{{ end }}

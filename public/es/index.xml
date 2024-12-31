@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bienvenido a Yieh Corp (Español) on Yieh Corp (Español)</title>
+    <link>/es/</link>
+    <description>Recent content in Bienvenido a Yieh Corp (Español) on Yieh Corp (Español)</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acero Inoxidable</title>
+      <link>/es/steps/step-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/es/steps/step-1/</guid>
+      <description>&lt;h1 id=&#34;available-products-for-step-1&#34;&gt;Available Products for Step 1&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Product A&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product B&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Configuración de la barra de navegación</title>
+      <link>/es/nav/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/es/nav/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>/es/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/es/footer/</guid>
+      <description>&lt;h1 id=&#34;footer-configuration-field-explanation&#34;&gt;Footer Configuration Field Explanation&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;description&lt;/strong&gt;: A detailed description of the product or service that appears in the footer section. It explains the core features or benefits of the product, helping users understand what the service offers. In this case, it emphasizes the ease of building professional, secure websites with MDFriday.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;address&lt;/strong&gt;: The physical location of the company or service, displayed in the footer. Here, it shows &amp;ldquo;Wuhan, China.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;links&lt;/strong&gt;: A list of links to be displayed in the footer section. Each entry consists of a category, a link&amp;rsquo;s title, URL, and a flag indicating whether the link is ready to be used (&lt;code&gt;true&lt;/code&gt; means the link is ready, &lt;code&gt;false&lt;/code&gt; means the link is not yet ready and might trigger an action like &lt;code&gt;onclick&lt;/code&gt;). Links under the same category share the same category name but can have different URLs.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;Resources, Pricing, /pricing, false&amp;quot;&lt;/code&gt; means there is a &amp;ldquo;Resources&amp;rdquo; category with a link titled &amp;ldquo;Pricing&amp;rdquo; that leads to &lt;code&gt;/pricing&lt;/code&gt;, but it is not ready (likely will trigger an action instead of navigating).&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;Resources, Documentation, /docs, true&amp;quot;&lt;/code&gt; means there is a &amp;ldquo;Resources&amp;rdquo; category with a link titled &amp;ldquo;Documentation&amp;rdquo; that leads to &lt;code&gt;/docs&lt;/code&gt;, and it is ready for use.&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;Social Media, Facebook, https://www.facebook.com/YiehCorp?sk=wall, true&amp;quot;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;Social Media, Instagram, https://www.instagram.com/yieh_corporation/, true&amp;quot;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;Social Media, WhatsApp, https://wa.me/886966159200?text=Hello%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20products, true&amp;quot;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;notes&#34;&gt;Notes:&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Links within the same category (e.g., multiple &amp;ldquo;Resources&amp;rdquo; links) are listed consecutively under the same category name.&lt;/li&gt;&#xA;&lt;li&gt;The category name (e.g., &amp;ldquo;Resources&amp;rdquo;) appears in the first position, followed by the link title, URL, and readiness flag.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Aluminum</title>
+      <link>/steps/step-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/step-4/</guid>
+      <description>&lt;h1 id=&#34;available-products-for-step-4&#34;&gt;Available Products for Step 4&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Product A&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product B&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Bar</title>
+      <link>/steps/step-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/step-6/</guid>
+      <description>&lt;h1 id=&#34;available-products-for-step-6&#34;&gt;Available Products for Step 6&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Product A&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product B&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Carbon Steel</title>
+      <link>/steps/step-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/step-2/</guid>
+      <description>&lt;h1 id=&#34;available-products-for-step-2&#34;&gt;Available Products for Step 2&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Product A&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product B&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Coated Steel</title>
+      <link>/steps/step-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/step-3/</guid>
+      <description>&lt;h1 id=&#34;available-products-for-step-3&#34;&gt;Available Products for Step 3&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Product A&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product B&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Contacto</title>
+      <link>/es/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/es/contact/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Nombre&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Correo Electrónico&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Mensaje&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Enviar&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    <item>
+      <title>MDFriday: Product introduction</title>
+      <link>/es/product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/es/product/</guid>
+      <description>&lt;h1 id=&#34;product-field-explanation&#34;&gt;Product Field Explanation&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;title&lt;/strong&gt;: The theme of the current page in the browser.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;tagline&lt;/strong&gt;: A short slogan or subtitle that summarizes the core value or feature of the product.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;highlight&lt;/strong&gt;: A key advantage of the product, such as speed or ease of use, often used to capture the user&amp;rsquo;s attention.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;description&lt;/strong&gt;: A detailed explanation of the product, including its features, benefits, and use cases, helping users better understand the product.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;button_text&lt;/strong&gt;: The text displayed on the button, guiding the user to perform a specific action (e.g., sign up, create a website).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;button_link&lt;/strong&gt;: The link that the button directs to when clicked, leading to a specific page or process.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;freemium_text&lt;/strong&gt;: Text that promotes getting started for free, often used to encourage users to try the product for free or begin their journey.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;claimer1&lt;/strong&gt;: A statement emphasizing a product advantage or feature, such as &amp;ldquo;No coding required.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;claimer2&lt;/strong&gt;: Another statement or supplementary explanation highlighting another benefit or feature of the product.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;claimer3&lt;/strong&gt;: Another statement or supplementary explanation highlighting another benefit or feature of the product.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Others</title>
+      <link>/steps/step-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/step-8/</guid>
+      <description>&lt;h1 id=&#34;available-products-for-step-8&#34;&gt;Available Products for Step 8&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Product A&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product B&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Pipe/Tube</title>
+      <link>/steps/step-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/step-5/</guid>
+      <description>&lt;h1 id=&#34;available-products-for-step-5&#34;&gt;Available Products for Step 5&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Product A&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product B&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Soluciones Continuas para la Industria del Metal</title>
+      <link>/es/how-to/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/es/how-to/</guid>
+      <description>&lt;h1 id=&#34;how-to-configuration-field-explanation&#34;&gt;How-To Configuration Field Explanation&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;title&lt;/strong&gt;: The main title of the page, which is displayed prominently to inform users about the page&amp;rsquo;s purpose. In this case, it provides an overview of how MDFriday works.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;subtitle&lt;/strong&gt;: A secondary line of text, usually used to provide additional context or details. It typically appears beneath the title and summarizes the key message. In this case, it gives a brief description of the process of converting MD files into websites quickly.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;steps&lt;/strong&gt;: A list of steps to guide users through a process. Each step is represented as a string, and they are listed in order of execution. The format generally includes the step number, a short description, and any relevant instructions or actions to take.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;1 | Install Obsidian Plugin | Search for MDFriday in Obsidian’s plugin store, download, and enable it.&lt;/code&gt; explains the first step, which is to install the MDFriday plugin in Obsidian.&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;2 | Create a Friday Note | Open a new note with MDFriday enabled.&amp;quot;&lt;/code&gt; provides instructions for the second step, creating a new note in Obsidian with MDFriday enabled.&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;3 | Preview | Select a theme, configure properties, and click Preview.&amp;quot;&lt;/code&gt; guides the user on how to preview the site with MDFriday.&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;4 | Deploy | Publish your site online at app.mdfriday.com.&amp;quot;&lt;/code&gt; explains the final step, which is to deploy the site after previewing it.&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;&amp;quot;5 | Deploy | Publish your site online at app.mdfriday.com.&amp;quot;&lt;/code&gt; explains the final step, which is to deploy the site after previewing it.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;notes&#34;&gt;Notes:&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;steps&lt;/strong&gt; are an ordered list of actions the user should take to use MDFriday. Each step includes a number, a title (action), and a brief description of the action.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Wire Rod</title>
+      <link>/steps/step-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/steps/step-7/</guid>
+      <description>&lt;h1 id=&#34;available-products-for-step-7&#34;&gt;Available Products for Step 7&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Product A&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product B&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Option 1&lt;/li&gt;&#xA;&lt;li&gt;Option 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Yieh Corp: Impulsando negocios en todo el mundo</title>
+      <link>/es/user-trust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/es/user-trust/</guid>
+      <description>&lt;h1 id=&#34;user-trust-and-impact-field-explanation&#34;&gt;User Trust and Impact Field Explanation&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;title&lt;/strong&gt;: The main title for the page, typically describing the topic or theme of the section, in this case, &amp;ldquo;User Trust and Impact.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;trusted_count&lt;/strong&gt;: The number of users who trust the service. This field highlights how many users have adopted or endorsed the product, which can serve as social proof to build credibility.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;websites_created&lt;/strong&gt;: A description of the number of websites that have been created using the service. It emphasizes the impact and usage of the platform by showcasing how many websites have been powered by MDFriday.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

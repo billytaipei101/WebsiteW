@@ -1,0 +1,24 @@
+{{ $currentPage := . }}
+{{ range .Site.Pages.ByWeight }}
+  {{ if eq .Section "steps" }}
+    {{ if or (eq $currentPage.Language.Lang "en") (eq $currentPage.Language.Lang .Language.Lang) }}
+      <div class="step">
+        <a href="{{ .RelPermalink }}" target="{{ .Site.Params.internalLinkTarget }}">
+          <h2>{{ .Title }}</h2>
+        </a>
+        <ul class="product-list">
+          {{ range .Params.products }}
+            <li>
+              <h3>{{ .name }}</h3>
+              <ul>
+                {{ range .options }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  {{ end }}
+{{ end }}

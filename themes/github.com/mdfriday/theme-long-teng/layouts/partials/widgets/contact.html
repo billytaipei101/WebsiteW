@@ -1,0 +1,47 @@
+{{ $isSpanish := strings.HasPrefix .RelPermalink "/es/" }}
+<section id="contact">
+  <div class="padding-vertical padding-large">
+    <div class="page-padding">
+      <div class="container-large">
+        <div class="text-align-center">
+          {{ if $isSpanish }}
+            <h2 class="heading-large">Contacto</h2>
+            <p class="subheading">¡Nos encantaría saber de ti!</p>
+          {{ else }}
+            <h2 class="heading-large">Contact</h2>
+            <p class="subheading">We'd love to hear from you!</p>
+          {{ end }}
+        </div>
+        {{ if $isSpanish }}
+          <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contacto">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+              </div>
+              <button type="submit" class="button-primary">Enviar</button>
+          </form>
+        {{ else }}
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+              </div>
+              <button type="submit" class="button-primary">Send</button>
+          </form>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+theme: theme-long-teng
+baseURL: / 
+defaultContentLanguage: en
+title: Yieh Corp
+description: MDFriday homepage, showcase the product or service.
+
+# Multilingual Configuration
+languages:
+  en:
+    title: Yieh Corp (English)
+    languageName: English
+    weight: 1
+    contentDir: content/en
+  es:
+    title: Yieh Corp (Español)
+    languageName: Español
+    weight: 2
+    contentDir: content/es
+
+module:
+  imports:
+    - path: github.com/mdfriday/theme-long-teng
+
+params:
+  Author: william_Cruz
+  internalLinkTarget: _self
+  
