@@ -2,3 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+.DS_Store
+.hugo_build.lock
+
+# Hugo build output and cache (Netlify builds this from source, no need to commit)
+public/
+resources/
