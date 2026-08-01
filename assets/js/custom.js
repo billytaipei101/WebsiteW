@@ -34,43 +34,27 @@ document.addEventListener('DOMContentLoaded', function () {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
-  function hash(n) {
-    var x = Math.sin(n) * 43758.5453;
-    return x - Math.floor(x);
-  }
-
   function draw() {
     ctx.clearRect(0, 0, width, height);
-    var midY = height * 0.52;
-    var amp = height * 0.16;
-    var band = height * 0.3; // thickness of the ribbon
-    var colSpacing = width / (COLS - 1);
+    var midY = height * 0.55;
+    var amp = height * 0.22;
 
     for (var j = 0; j < ROWS; j++) {
-      var rowT = j / (ROWS - 1); // 0..1
-      var rowOffset = (rowT - 0.5) * band;
-      var rowFade = 1 - Math.abs(rowT - 0.5) * 1.7; // fades at top/bottom of ribbon
-      var rowPhase = rowT * 0.9;
+      var rowT = j / (ROWS - 1);
+      var rowSpread = (rowT - 0.5) * 2; // -1..1
+      var rowFade = 1 - Math.abs(rowSpread) * 0.85;
 
       for (var i = 0; i < COLS; i++) {
         var colT = i / (COLS - 1);
-        var jitter = (hash(i * 12.9898 + j * 78.233) - 0.5) * colSpacing * 0.9;
-        var x = colT * width + jitter;
-
-        var wave = Math.sin(colT * Math.PI * 1.3 + t + rowPhase) * 0.75 +
-          Math.sin(colT * Math.PI * 6 + t * 1.6 + rowPhase * 2) * 0.15;
-        var y = midY + wave * amp + rowOffset;
-
-        // Fade in from the left edge, like the reference.
-        var edgeFade = Math.max(0, Math.min(1, colT / 0.3));
+        var x = colT * width;
+        var wave = Math.sin(colT * Math.PI * 2.4 + t + rowSpread * 1.4) * 0.6 +
+          Math.sin(colT * Math.PI * 4.2 - t * 0.7 + rowSpread * 2.1) * 0.35;
+        var y = midY + rowSpread * height * 0.28 + wave * amp * (0.5 + 0.5 * rowFade);
 
         var heightFactor = Math.max(0, Math.min(1, (wave + 1) / 2));
-        var visibility = rowFade * edgeFade;
-        if (visibility <= 0.02) continue;
-
-        var color = lerpColor(trough, crest, heightFactor);
-        var alpha = (0.15 + 0.7 * visibility);
-        var radius = (0.5 + 1.7 * heightFactor) * (0.4 + 0.6 * visibility);
+        var color = lerpColor(trough, crest, heightFactor * rowFade);
+        var alpha = 0.25 + 0.65 * rowFade;
+        var radius = (1.2 + 2.6 * heightFactor) * (0.5 + 0.5 * rowFade);
 
         ctx.beginPath();
         ctx.fillStyle = 'rgba(' + color[0] + ',' + color[1] + ',' + color[2] + ',' + alpha.toFixed(2) + ')';

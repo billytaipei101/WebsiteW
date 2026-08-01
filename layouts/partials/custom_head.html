@@ -8,6 +8,17 @@
     width: 100%;
     height: 320px;
   }
+  /* This theme alternates home-section background shades slightly
+     (odd/even striping); force this section to match the page's
+     actual base background exactly instead of whichever stripe it
+     happens to land on. Values match the theme's own defaults for
+     `background` / `dark.background` in parse_theme.html. */
+  #wave.home-section {
+    background-color: rgb(255, 255, 255);
+  }
+  .dark #wave.home-section {
+    background-color: hsla(231, 15%, 16%, 1);
+  }
   @media (max-width: 767px) {
     .wave-canvas {
       height: 220px;
