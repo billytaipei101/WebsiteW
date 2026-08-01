@@ -1,5 +1,5 @@
 ---
-bio: Multidisciplinary professional integrating cognitive science, data engineering, and software development.
+bio: Multidisciplinary researcher and developer integrating cognitive science, data engineering, and software development.
 education:
   courses:
   - course: Ph.D. Candidate in Mind Sciences
@@ -39,6 +39,6 @@ superuser: true
 title: William Cruz Molina 孟威廉
 ---
 
-William Cruz Molina is a multidisciplinary researcher and developer integrating cognitive science, data engineering, and software development. He is a Ph.D. Candidate in Mind Sciences at National Cheng Kung University (NCKU), researching how interactivity modulates spatial transformation ability through viewpoint-contingent VR mental rotation experiments built in Unity, with an analysis pipeline in R and Python. Outside academia, he has independently built a multilingual algorithmic trading platform and published MQL5 market-structure indicators. Trilingual in Spanish, English, and Chinese, with a track record of cross-cultural technical communication and teaching.
+I am a multidisciplinary researcher and developer integrating cognitive science, data engineering, and software development. I'm a Ph.D. Candidate in Mind Sciences at National Cheng Kung University (NCKU), researching how interactivity modulates spatial transformation ability through viewpoint-contingent VR mental rotation experiments built in Unity, with an analysis pipeline in R and Python. Outside academia, I've independently built a multilingual algorithmic trading platform and published MQL5 market-structure indicators. I'm trilingual in Spanish, English, and Chinese, with a track record of cross-cultural technical communication and teaching.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "/files/cv.pdf" "newtab" >}}resumé{{< /staticref >}}.
