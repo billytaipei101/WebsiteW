@@ -1,26 +1,27 @@
 ---
-bio: My research interests include cognitive neuropsychology, psycometrics and data science.
+bio: Multidisciplinary professional integrating cognitive science, data engineering, and software development.
 education:
   courses:
-  - course: PhD in Psychology
-    institution: National Cheng Kung University - Taiwan
-    year: 2022
-  - course: Msc in Science, Experiemental Psychology
-    institution: National Cheng Chi University - Taiwan
+  - course: Ph.D. Candidate in Mind Sciences
+    institution: National Cheng Kung University (NCKU) - Tainan
+    year: "2019 - Present"
+  - course: M.Sc. in Experimental Psychology
+    institution: National Cheng Chi University (NCCU) - Taipei
     year: 2015
-  - course: BSc in Psychology
-    institution: Universidad Nacional de Colombia 
+  - course: B.Sc. in Psychology
+    institution: Universidad Nacional de Colombia - Bogotá
     year: 2011
 email: "wi.cruzm@gmail.com"
 highlight_name: false
 interests:
-- Cognitive NeuroPsychology
-- Data Science
+- Cognitive Science
+- VR Development
+- Data Engineering & Analysis
 - Statistics
 organizations:
 - name: National Cheng Kung University
   url: https://web.ncku.edu.tw
-role: PhD Student
+role: Ph.D. Candidate in Mind Sciences
 social:
 - icon: envelope
   icon_pack: fas
@@ -35,6 +36,6 @@ superuser: true
 title: William Cruz Molina 孟威廉
 ---
 
-William Cruz is a psychologist with experience as data manager and background in educational and psychological testing. Skilled in statistical analyses, automation procedures and scripting for cognitive and psychological assessment procedures using MATLAB and R. Strong research background with a Degree in Master of Science from National Cheng-chi University. Private language tutor including both Spanish and English.
+William Cruz Molina is a multidisciplinary researcher and developer integrating cognitive science, data engineering, and software development. He is a Ph.D. Candidate in Mind Sciences at National Cheng Kung University (NCKU), researching how interactivity modulates spatial transformation ability through viewpoint-contingent VR mental rotation experiments built in Unity, with an analysis pipeline in R and Python. Outside academia, he has independently built a multilingual algorithmic trading platform and published MQL5 market-structure indicators. Trilingual in Spanish, English, and Chinese, with a track record of cross-cultural technical communication and teaching.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "/files/cv.pdf" "newtab" >}}resumé{{< /staticref >}}.
