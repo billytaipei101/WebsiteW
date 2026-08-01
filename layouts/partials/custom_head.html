@@ -19,9 +19,23 @@
   .dark #wave.home-section {
     background-color: hsla(231, 15%, 16%, 1);
   }
+  /* Tighten the gap between Skills and the wave animation. Theme
+     default is a uniform 110px top/bottom on every section. */
+  #skills.home-section {
+    padding-bottom: 40px;
+  }
+  #wave.home-section {
+    padding-top: 30px;
+  }
   @media (max-width: 767px) {
     .wave-canvas {
       height: 220px;
+    }
+    #skills.home-section {
+      padding-bottom: 24px;
+    }
+    #wave.home-section {
+      padding-top: 20px;
     }
   }
 </style>
