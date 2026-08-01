@@ -1,0 +1,1089 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nelson Bighetti">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Learn about the most frequently used workspace commands for R.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/01_r_workspacecommands/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#ff3860">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.818e5ee8c16758da3174259ac6676904.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+  <link rel="alternate" href="/courses/01_r_workspacecommands/index.xml" type="application/rss+xml" title="WC StatsPsy">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/01_r_workspacecommands/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="WC StatsPsy">
+  <meta property="og:url" content="/courses/01_r_workspacecommands/">
+  <meta property="og:title" content="Workspace Commands | WC StatsPsy">
+  <meta property="og:description" content="Learn about the most frequently used workspace commands for R."><meta property="og:image" content="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2021-01-11T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Workspace Commands | WC StatsPsy</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">WC StatsPsy</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">WC StatsPsy</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/01_r_workspacecommands/">Workspace Commands</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/01_r_workspacecommands/example1/">R tips</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/01_r_workspacecommands/example1/">Example Setup</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#setting-packages-repository">Setting packages repository</a></li>
+    <li><a href="#download-install-and-load-packages">Download, Install and Load packages</a></li>
+    <li><a href="#change-set-working-directory">Change, set working directory</a></li>
+    <li><a href="#miscelaneous-features">Miscelaneous Features</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Workspace Commands</h1>
+
+          <div class="article-style">
+            <p>In order to start working with R you need to prepare your working space or environment, this involves downloading, installing and loading the packages that will be required by the processes you want to perform; sometimes it also involves specifying what will be the encoding of your script, whether to turn off the scientific notation when getting an output among others such as set the <a href="https://cran.r-project.org/mirrors.html" target="_blank" rel="noopener">CRAN repository</a> from which you would desire to download the packages, etc.</p>
+<ul>
+<li><strong>Setting packages repository</strong></li>
+<li><strong>Download, Install and Load packages</strong></li>
+<li><strong>Change, Set working directory</strong></li>
+<li><strong>Script encoding, scientific notation among other miscelaneous features</strong></li>
+</ul>
+<h2 id="setting-packages-repository">Setting packages repository</h2>
+<p>The list of exhaustive CRAN repositories can be found in the following website <a href="https://cran.r-project.org/mirrors.html">https://cran.r-project.org/mirrors.html</a>, choose a location close to you.</p>
+<pre><code class="language-{r,">r &lt;- getOption(&quot;repos&quot;)
+r[&quot;CRAN&quot;] &lt;- &quot;https://www.icesi.edu.co/CRAN/&quot;    # Repository used in Colombia
+r[&quot;CRAN&quot;] &lt;- &quot;http://cran.csie.ntu.edu.tw/&quot;      # Repository used in Taiwan
+options(repos=r)
+</code></pre>
+<h2 id="download-install-and-load-packages">Download, Install and Load packages</h2>
+<p>The most simple way is to identify the name of the package and enter the following lines in the console for downloading, installing and loading a package into the current working environment. You only need to perform this once for installing a package, but if you restart a session you ought to load the required package everytime with the <code>library()</code> command.</p>
+<pre><code class="language-{r,">.libPaths()                     # Generates the current path were packages are saved, change if neccesary
+install.packages('openxlsx')    # install the package to your local disk
+library('openxlsx')             # load the pacakge into your current 
+</code></pre>
+<p>Other functions related with package management include the following</p>
+<pre><code class="language-{r,">remove.packages('agricolae')                     # Remove package from your local disk
+installed.packages()                             # Generates a list of the currently installed packages
+update.packages()                                # updates the currently installed packages 
+
+k&lt;-as.data.frame(installed.packages(),stringsAsFactors = FALSE)  # consult installed packages as a data frame
+</code></pre>
+<p>For large scripts or function in which you might require a large number of packages different approaches are plausible, as the following</p>
+<pre><code class="language-{r,">.libPaths(&quot;/Users/williamcruz/Documents/R Packages&quot;) # change the path accordingly to your packages folder
+r &lt;- getOption(&quot;repos&quot;)
+r[&quot;CRAN&quot;] &lt;- &quot;http://cran.csie.ntu.edu.tw/&quot;          # set repository to a National Repository in your country
+options(repos=r)
+x &lt;- c('ggplot2','openxlsx','plyr')                  # a list of packages to be used
+packages &lt;- as.data.frame(installed.packages())      # List of currently installed packages
+
+for (i in 1:length(x)) {
+  if(x[i] %in% packages$Package == TRUE){
+    library(x[i],character.only = TRUE)  
+  }else if(x[i] %in% packages$Package == FALSE){
+    install.packages(as.character(x[i]))
+    library(x[i],character.only = TRUE)  
+  }
+}
+</code></pre>
+<p>The next option involves to have downloaded the <code>pacman</code> package, but is also a good and compact option when you need to load several packages at the beggining of a session.</p>
+<pre><code class="language-{r,">library(pacman)
+pacman::p_load(simstudy,minerva,pcaPP,parallel,dplyr,ggplot2,grid,
+               scales,plyr,ggthemes,ggrepel,ggpubr,simFrame,corTest)
+</code></pre>
+<h2 id="change-set-working-directory">Change, set working directory</h2>
+<p>Some of the procedures you perform in <em>R</em></p>
+<pre><code class="language-{r,">getwd()                                # print the current working directory - cwd
+setwd('a valid directory path')        # set the working directory to the specified path
+
+dir()                                  # Produce a vector of the file names in the current wd
+dir(&quot;name of directory&quot;)               # allows to choose one file within the cwd
+</code></pre>
+<h2 id="miscelaneous-features">Miscelaneous Features</h2>
+<p>Some other workspace frequently used commands include the following</p>
+<pre><code class="language-{r,">options(scipen = 99)               # turn off scientific notation (optional)
+options(encoding = &quot;UTF-8&quot;)        # Select the encoding of the files, not absolutely required
+rm(list=ls())                      # Erasing all objects from the current work environment
+cat(&quot;\014&quot;)                        # Erasing previous commands from the console
+
+ls()                               # list the objects in the current workspace
+ls(pat = &quot;m&quot;)                      # list the objects that have in their name a given pattern
+ls(pat = &quot;^m&quot;)                     # Lists objects whose name start with m
+ls.str(pat= &quot;M&quot;, max.level=-1)     # Reduces the level of information
+ls.str()                           # Display some details of the objects in memory
+rm(list=ls())                      # Erasing all objects from the current work environment
+
+m &lt;- as.data.frame(list.files(),stringsAsFactors = FALSE) # make a data frame out of the files names in the current wd
+m$index &lt;- as.numeric(m$'list.files()' == 'x')            # Procedure to check whether a file exist or not in the current wd
+
+help(options)                                    # learn about available options
+help('bs') | help('bs', package = 'splines')     # Search info about the funcion bs
+apropos('lm')                                    # Finds all functions which name contains the character string given as measure
+options()                                        # view current option settings
+options(digits=3)                                # number of digits to print on output
+
+history()                                        # display last 25 commands
+history(max,show=Inf)                            # display all previous commands
+
+savehistory(file=&quot;myfile&quot;)                       # default is &quot;.Rhistory&quot;
+loadhistory(file= &quot;myfile&quot;)                      # default is &quot;.Rhistory&quot;
+
+save.image()                                     # save the workspace to the file .RData in the cwd
+save(x, file=&quot;myfile,RData&quot;)                     # save specific objects to a file
+n &lt;- list(MP=MP,MP.original=MP.original)         
+save(n, file= &quot;myfile.RData&quot;)                    # save specific objects to a file
+load(&quot;myfile.RData&quot;)                             # load a workspace into the current session
+q()                                              # quit R. You will be prompted to save the workspace
+
+rm(x)                                            # Deletes the object x
+rm(x,y)                                          # Deletes both objects x and y
+rm(list=ls())                                    # Deletes all objects in memory
+rm(list=ls(pat= &quot;^m&quot;))                           # Deletes selectively some objects
+
+?lm                                              # How the linear model function works
+help(lm)                                         # Same as above
+help(&quot;lm&quot;)                                       # Same as above
+help(lm, try.all.packages=TRUE)                  # allows to search in all packages
+help(&quot;bs&quot;, package = &quot;splines&quot;)                  # Display help pages from a package not loaded in memory
+help.start()                                     # A search with keywords is possible with this html help
+help.start(&quot;tree&quot;, rebuild=TRUE)                 # refresh the database used
+apropos(&quot;help&quot;)                                  # finds all functions which name contains the given character string
+</code></pre>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 11, 2021</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/01_R_workspaceCommands/_index.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    William C ©<code> </code>2021
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.01aef7feed836dba63651a805a4f1c14.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
