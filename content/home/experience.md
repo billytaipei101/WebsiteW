@@ -41,7 +41,7 @@ experience:
   title: Research Assistant
 - company: ICFES
   company_url: "https://www.icfes.gov.co"
-  date_end: "2018-12-31"
+  date_end: "2019-08-31"
   date_start: "2016-04-01"
   description: Psychometrist and Data Manager.
   location: Colombia
