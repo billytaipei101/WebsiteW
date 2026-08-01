@@ -25,13 +25,20 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   You can begin a multiline `description` using YAML's `|-`.
 experience:
-- company: AMC
-  company_url: "https://www.english4u.net/"
+- company: ApexFintech
+  company_url: "https://apexfintech.net"
   date_end: ""
-  date_start: "2020-05-01"
-  description: English Tutor
+  date_start: "2025-01-01"
+  description: Leading interface development and product direction for a multilingual algorithmic trading and financial services platform.
   location: Taiwan
-  title: English Tutor
+  title: CEO
+- company: National Cheng Kung University (NCKU)
+  company_url: "https://web.ncku.edu.tw"
+  date_end: ""
+  date_start: "2019-09-01"
+  description: VR-based research on spatial transformation, studying how interactivity modulates mental rotation ability in viewpoint-contingent virtual environments.
+  location: Tainan, Taiwan
+  title: Research Assistant
 - company: ICFES
   company_url: "https://www.icfes.gov.co"
   date_end: "2018-12-31"
