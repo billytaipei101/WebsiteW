@@ -17,7 +17,6 @@ interests:
 - Cognitive Science
 - Decision-Making & Judgment
 - VR Development
-- Multi-Agent Systems
 - Computational Social Science
 - Data Engineering & Analysis
 - Statistics
