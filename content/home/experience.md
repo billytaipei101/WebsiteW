@@ -46,4 +46,11 @@ experience:
   description: Psychometrist and Data Manager.
   location: Colombia
   title: Psychometrist
+- company: National Cheng Kung University (NCKU)
+  company_url: "https://web.ncku.edu.tw"
+  date_end: "2015-12-31"
+  date_start: "2013-01-01"
+  description: Eye Movement and Reading Laboratory.
+  location: Tainan, Taiwan
+  title: Research Assistant
 ---
