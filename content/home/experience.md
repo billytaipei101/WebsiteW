@@ -53,4 +53,32 @@ experience:
   description: Eye Movement and Reading Laboratory.
   location: Tainan, Taiwan
   title: Research Assistant
+- company: Trend Micro
+  company_url: "https://www.trendmicro.com"
+  date_end: "2015-09-30"
+  date_start: "2015-01-01"
+  description: Research Department. Algorithm development for SPAM identification.
+  location: Taipei, Taiwan
+  title: Research Intern
+- company: Universidad Antonio Nariño
+  company_url: "https://www.uan.edu.co"
+  date_end: "2012-05-31"
+  date_start: "2011-09-01"
+  description: Statistical analyses on faculty and student data for institutional audits.
+  location: Bogotá, Colombia
+  title: Research Assistant
+- company: Universidad Nacional de Colombia
+  company_url: "https://unal.edu.co"
+  date_end: "2012-04-30"
+  date_start: "2011-11-01"
+  description: Statistical analyses on prisoner data for risk profile generation.
+  location: Bogotá, Colombia
+  title: Psychometrician
+- company: Universidad Nacional de Colombia
+  company_url: "https://unal.edu.co"
+  date_end: "2011-08-31"
+  date_start: "2011-03-01"
+  description: Document validation in a national recruitment process.
+  location: Bogotá, Colombia
+  title: Auditor
 ---
