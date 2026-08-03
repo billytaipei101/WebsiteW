@@ -4,7 +4,7 @@ subtitle: "Two narrative Jupyter notebooks on Multi-Voxel Pattern Analysis, now 
 summary: "A walkthrough of a small repo of lab notebooks on Multi-Voxel Pattern Analysis (MVPA) for fMRI — one notebook per toolchain, MATLAB and Python, including full environment setup and real decoding results."
 authors:
 - adminWill
-date: "2026-08-03"
+date: "2023-05-15"
 categories: ["Neuroscience", "Machine Learning"]
 tags: ["MVPA", "fMRI", "Python", "MATLAB", "PyMVPA", "Jupyter"]
 image:
