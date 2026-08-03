@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Courses"
-  url = "courses/"
+  url = "https://psychstat.netlify.app/en/"
   weight = 10
 
 [[main]]
