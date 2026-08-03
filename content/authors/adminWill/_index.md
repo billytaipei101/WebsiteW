@@ -20,6 +20,18 @@ interests:
 - Computational Social Science
 - Data Engineering & Analysis
 - Statistics
+languages:
+- name: Spanish
+  level: Native
+- name: English
+  level: Fluent
+- name: Chinese
+  level: Intermediate
+  badges:
+  - image: /media/badges/iKnow_Items.png
+    alt: "iKnow: 3,500 items mastered"
+  - image: /media/badges/iKnow_Hours.png
+    alt: "iKnow: 650 hours studied"
 organizations:
 - name: National Cheng Kung University
   url: https://web.ncku.edu.tw
