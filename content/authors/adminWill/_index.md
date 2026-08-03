@@ -32,6 +32,16 @@ languages:
     alt: "iKnow: 3,500 items mastered"
   - image: /media/badges/iKnow_Hours.png
     alt: "iKnow: 650 hours studied"
+websites:
+- title: Apex Fintech
+  description: Algorithmic Trading
+  url: "https://apexfintech.net/"
+- title: Scroll Master
+  description: Speed Reading App
+  url: "https://scroll-master.wi-cruzm.workers.dev/"
+- title: Stats Station
+  description: Statistics, Machine Learning and Data Analysis
+  url: "https://psychstat.netlify.app/en/"
 organizations:
 - name: National Cheng Kung University
   url: https://web.ncku.edu.tw

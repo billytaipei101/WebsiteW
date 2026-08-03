@@ -126,6 +126,19 @@
       </div>
       {{ end }}
 
+      {{ with $person.websites }}
+      <div class="col-12 websites-section">
+        <h3>Websites</h3>
+        <ul class="ul-interests">
+          {{ range . }}
+          <li>
+            <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ with .description }} &mdash; {{ . }}{{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
     </div>
   </div>
 </div>
