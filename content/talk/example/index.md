@@ -1,51 +1,42 @@
 ---
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac
-  convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac
-  faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien
-  eu, pulvinar tempor diam.
+abstract: ""
 address:
-  city: Stanford
-  country: United States
-  postcode: "94305"
-  region: CA
-  street: 450 Serra Mall
-all_day: false
-authors: []
-date: "2030-06-01T13:00:00Z"
-date_end: "2030-06-01T15:00:00Z"
-event: Wowchemy Conference
-event_url: https://example.org
-featured: false
+  city: Xalapa
+  region: Veracruz
+  country: Mexico
+all_day: true
+authors:
+- Avendaño Prieto BL
+- adminWill
+- Avendaño Pimentel XA
+date: "2011-05-18T00:00:00Z"
+date_end: "2011-05-20T00:00:00Z"
+event: 5th Latin American Congress of Health Psychology — ALAPSA, Universidad Veracruzana & IIP-UV
+event_url: ""
+featured: true
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
-  focal_point: Right
+  caption: Certificate of Participation, 5th Latin American Congress of Health Psychology, Xalapa 2011
+  focal_point: Smart
 links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
-location: Wowchemy HQ
-projects:
-- internal-project
-publishDate: "2017-01-01T00:00:00Z"
-slides: example
-summary: An example talk using Wowchemy's Markdown slides feature.
-tags: []
-title: Example Talk
+- icon: certificate
+  icon_pack: fas
+  name: Certificate of Participation
+  url: featured.jpg
+location: Universidad Veracruzana, Xalapa, Veracruz, Mexico
+projects: []
+publishDate: "2011-05-18T00:00:00Z"
+summary: Oral presentation on the psychometric analysis of the EuroTest/Pesotest dementia screening test in a sample from Bogotá, at the 5th Latin American Congress of Health Psychology (ALAPSA).
+tags:
+- Neuropsychology
+- Psychometrics
+- Dementia Screening
+title: Psychometric Analysis of the Screening Test for the Evaluation of Dementias (EuroTest/Pesotest) in a Sample from the City of Bogotá
 url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
 
-{{% callout note %}}
-Click on the **Slides** button above to view the built-in slides feature.
-{{% /callout %}}
+Presented as an oral presentation (*Ponente*) at the **5th Latin American Congress of Health Psychology** — *"Hacia la humanización del cuidado de la salud"* — held in Xalapa, Veracruz, Mexico, May 18–20, 2011. The congress was jointly organized by Universidad Veracruzana, its Instituto de Investigaciones Psicológicas (IIP-UV), and the Asociación Latinoamericana de Psicología de la Salud (ALAPSA).
 
-Slides can be added in a few ways:
-
-- **Create** slides using Wowchemy's [*Slides*](https://wowchemy.com/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://wowchemy.com/docs/writing-markdown-latex/).
-
-Further event details, including [page elements](https://wowchemy.com/docs/writing-markdown-latex/) such as image galleries, can be added to the body of this page.
+The talk covered the psychometric analysis of the EuroTest/Pesotest — a screening instrument for dementia evaluation — applied to a sample from Bogotá, Colombia. This early work on the Pesotest's psychometric properties would later feed into its full validation study, [published in 2014](/publication/eurotest-colombia/).

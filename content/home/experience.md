@@ -31,7 +31,7 @@ experience:
   date_start: "2025-01-01"
   description: Leading interface development and product direction for a multilingual algorithmic trading and financial services platform.
   location: Taiwan
-  title: CEO
+  title: CTO
 - company: National Cheng Kung University (NCKU)
   company_url: "https://web.ncku.edu.tw"
   date_end: ""
