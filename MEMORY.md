@@ -194,6 +194,51 @@ This file created, splitting `WebsiteW`'s history out of `psych_stat/MEMORY.md` 
 both sites together up to this point) per William's request. `psych_stat/MEMORY.md` keeps its own
 plan/phases and a short pointer here instead of full `WebsiteW` detail.
 
+### 2026-09-25 — Bilingual CV download (English + Chinese)
+
+- **CV pipeline clarified**: source of truth is `cv/cv_en.tex` → compiled to `cv/cv_en.pdf` →
+  copied to `static/files/cv.pdf`, which is what the "Download my resumé" link on the profile
+  page (`content/authors/adminWill/_index.md`) actually serves. Compiling requires
+  `friggeri-cv.cls` plus Lato/texgyreheros font files that live only in William's local
+  `~/Desktop/C_WORK/8_CV/CV_Project/` folder, not in this repo — grabbed temporarily to compile
+  and verify, not committed (same "don't commit build tooling" pattern as the Hugo binary).
+- **Discovered a divergence**: that Desktop `CV_Project` folder has a newer, more detailed
+  `cv_en.tex` (compiled Aug 14, later than this repo's copy) with additional content — a "Vision
+  Laboratory, NCKU" current role, consolidated teaching-job entries, split Publications/
+  Conferences sections, custom color-cycling section headers. **William's call: keep this repo's
+  simpler `cv_en.tex` as-is for now** — the Desktop version was not synced in. Revisit if he wants
+  the site's CV to match his newer Desktop draft.
+- **Added Chinese CV**: `cv/cv_zh.tex` existed only as a stale, uncompiled draft (older project
+  list, missing a 2023 conference entry, different section order, included a profile photo
+  `cv_en.tex` doesn't have). Fully resynced its content/order to match the current `cv_en.tex`
+  exactly, translated, then compiled and verified (3 pages, correct CJK rendering via headless
+  Chrome screenshot of the rendered PDF pages). Published to `static/files/cv_zh.pdf`.
+- **Profile page**: the single "Download my resumé" line is now two lines — "Download my resumé
+  in English" (→ `cv.pdf`) and "Download my resumé in 中文" (→ `cv_zh.pdf`) — William's explicit
+  phrasing choice (kept the sentence in English rather than fully translating the Chinese option's
+  label).
+- Verified with a real Hugo 0.83.1 build (0 errors) + headless-Chrome screenshot of the homepage
+  showing both lines rendering correctly and both PDF URLs returning 200.
+- Committed (`3cc7993`) but not pushed, per William's usual GitHub-Desktop-review workflow.
+  Left unrelated pre-existing uncommitted changes (`menus.toml` Courses-link edit, a `cv_en.tex`
+  comment-line edit, `.DS_Store`, untracked `Empirica/`) untouched/uncommitted since they predate
+  this session and aren't part of this task.
+- **Follow-up same session**: the uncommitted `menus.toml` Courses-link edit had a typo —
+  `psycoder.netlify.app` instead of `psychstat.netlify.app` (the actual live Stats Station site,
+  confirmed correct by William). Fixed in place; still uncommitted along with the rest of that
+  pre-existing diff, left for William to commit/push himself.
+- **Bug found and fixed same session**: William reported the Chinese CV's header (name/tagline
+  banner) wasn't rendering. Root cause was two bugs in `friggeri-cv.cls`, not a translation issue:
+  (1) the header is drawn via a TikZ `remember picture, overlay` node, which needs **two xelatex
+  passes** to draw at all — the first CV build only ran one pass; (2) the class's default
+  `\section` macro colors only the first 3 tokens of a title (a stylistic split like "sum"+"mary"),
+  which crashes with a "Runaway argument" error on short CJK titles like "學歷" (2 characters).
+  Fixed by overriding `\section` in `cv_zh.tex` to color the whole title instead of splitting it
+  (also fixes it for any future short-title section). Also swapped a `・` (katakana interpunct,
+  missing from Heiti TC) for `·` in the tagline. **Any future CV rebuild must run xelatex twice**
+  (or via `latexmk`) or the header silently disappears with no error — verified via headless-Chrome
+  screenshots of all 3 pages after the fix. Committed as `d603e36`.
+
 ## Still open
 
 - `WebsiteW-main` duplicate folder — not deleted yet, William's call.
@@ -202,3 +247,8 @@ plan/phases and a short pointer here instead of full `WebsiteW` detail.
   having real content to link from).
 - Visual inconsistency flagged, not fixed: the Flight 101 post's cover image (pastel gradient) vs.
   the other two posts' dark-navy AI-generated covers — William's choice, not acted on.
+- Desktop `CV_Project`'s newer `cv_en.tex` (Aug 14) not yet synced into this repo — William chose
+  to keep the repo's simpler version for now (see 2026-09-25 log entry); revisit if he wants the
+  richer content live.
+- Uncommitted at end of 2026-09-25 session: a one-line comment addition in `cv/cv_en.tex`
+  (pre-existing, unrelated to the CV work above).
