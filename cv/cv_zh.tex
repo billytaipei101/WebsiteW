@@ -8,9 +8,24 @@
 \usepackage{unicode-math}
 \setmathfont{latinmodern-math.otf}
 
+% friggeri-cv's default \section colors only the first 3 tokens of the title (e.g. "sum"+"mary");
+% that grabs past short CJK titles like "學歷" and crashes. Color the whole title instead.
+\renewcommand{\section}[1]{
+  \par\vspace{\parskip}
+  {%
+    \LARGE\headingfont\color{%
+      \ifcase\value{colorCounter}%
+        blue\or red\or orange\or green\or purple\else%
+        headercolor\fi%
+    }#1%
+  }
+  \stepcounter{colorCounter}
+  \par\vspace{\parskip}
+}
+
 \begin{document}
 \header{孟}{威廉}
-       {數據科學・VR開發・統計分析}
+       {數據科學 · VR開發 · 統計分析}
 
 \begin{aside}
   \section{聯絡資訊}
