@@ -252,6 +252,29 @@ plan/phases and a short pointer here instead of full `WebsiteW` detail.
   **left unchanged** — William's call to keep it as independently-maintained copy, not mirroring
   the CV's new framing. Verified both PDFs compile cleanly (2 xelatex passes each) and render
   correctly via screenshots of all pages. Committed as `c4b0356`.
+- **Follow-up same session**: updated the 03–08/11 National University of Colombian, Bogotá entry's
+  title from "Research Auditor" to "Auditor and HR Assistant" (both languages: 審計員暨人資助理).
+  Committed as `b77efd5`.
+- **Follow-up same session — link styling**: William asked for the "Applications and websites" URLs
+  to be underlined and blue rather than the PDF's default invisible-border-box style. Fixed via
+  `\hypersetup{colorlinks=true, urlcolor=blue}` + `ulem`'s `\uline` (plain `\underline` breaks on
+  text that wraps across lines, which the long Scroll Master URL does) wrapping every `\href` call
+  (website URLs and the contact email, per William's choice). Non-obvious gotcha: `friggeri-cv.cls`
+  sets `Color=textcolor` directly on the main font via `fontspec`, which silently overrides plain
+  `\color` switches for any text in that font — had to explicitly switch to `\bodyfont` (the
+  class's secondary font, no forced color) around link text for the blue to actually render.
+- **Concurrency incident, same session**: while this was in progress, William committed twice via
+  GitHub Desktop (`e39f2b8`, `584d298`) — this repo is a shared local working directory, and a
+  "commit all" from GitHub Desktop will sweep up whatever the current Claude Code session has sitting
+  uncommitted, not just William's own edits. `584d298` ("new Chinese CV") accidentally committed
+  ~7500 lines of scratch LaTeX build tooling (`friggeri-cv.cls`, font files, `.aux`/`.log`/`.bcf`/
+  `.run.xml` compile artifacts, verification screenshot PNGs) that were mid-task on disk, and froze
+  `cv_en.tex`/`cv_zh.tex` at an intermediate point in the link-styling fix (missing the
+  `colorlinks=true` line, so links still had the default border-box artifact). Cleaned up in
+  `d215937`: removed all the accidentally-committed build junk, landed the finished link-styling
+  fix. **Lesson: this local clone is actively shared with William's own GitHub Desktop commits —
+  don't assume a clean starting `git status` mid-session, and re-check `git log`/`git status` after
+  any pause where he might have committed.**
 
 ## Still open
 
