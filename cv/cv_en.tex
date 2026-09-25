@@ -1,3 +1,4 @@
+% Available in site and last version
 % !TEX program = xelatex
 % !TEX encoding = UTF-8 Unicode
 \documentclass[]{friggeri-cv}
@@ -8,37 +9,73 @@
 \usepackage{unicode-math}
 \setmathfont{latinmodern-math.otf}
 
+\makeatletter
+
+% Ensure custom colors are defined
+\definecolor{teal}{HTML}{4DB6AC}
+\definecolor{gold}{HTML}{FBC02D}
+\definecolor{coral}{HTML}{FF8A65}
+\definecolor{indigo}{HTML}{7986CB}
+
+% Force override of the section color macro
+\renewcommand{\@sectioncolor}[3]{%
+  {%
+    \color{%
+      \ifcase\value{colorCounter}%
+        blue\or%     % 1
+        red\or%      % 2
+        orange\or%   % 3
+        green\or%    % 4
+        purple\or%   % 5
+        teal\or%     % 6
+        gold\or%     % 7
+        coral\or%    % 8
+        indigo\else% % 9+
+        headercolor\fi%
+    }%
+    #1#2#3%
+  }%
+  % Loop back to 0 after index 8 so it repeats forever
+  \ifnum\value{colorCounter}<8
+    \stepcounter{colorCounter}%
+  \else
+    \setcounter{colorCounter}{0}%
+  \fi
+}
+
+\makeatother
 \begin{document}
 \header{William }{Cruz Molina}
-       {Data Science · VR Development · Statistical Analysis}
+       {Cognitive Science · Computational Behavioral Research · Advanced Statistics}
 
 \begin{aside}
+  %\includegraphics[width=3.4cm]{../ProfilePicture.png}
   \section{contact}
     Kaohsiung, Taiwan
     +886 966 159 200
     \href{mailto:wi.cruzm@gmail.com}{wi.cruzm@gmail.com}
   \section{languages}
-    Native Spanish
-    Fluent English
-    Intermediate Chinese
+    Fluent English \& Spanish
+    Intermediate High Chinese
   \section{programming}
     R/RStudio, Python, MATLAB,
     Unity, \LaTeX, VS Code,
-    Website Dev., MS Office
+    Git, Shell Scripting
   \section{core skills}
-    VR App Development,
-    Data Management,
-    Technical Writing,
-    Client Relations
+    Experimental Design,
+    Advanced Statistical Modeling,
+    Behavioral Data Analysis,
+    Spatial Cognition \& VR Methods,
+    Interdisciplinary Research
 \end{aside}
 
-\section{summary}
-Multidisciplinary professional integrating \textbf{Cognitive Science}, \textbf{Data Engineering}, and \textbf{Software Development}. PhD Candidate at NCKU researching spatial transformation via viewpoint-contingent VR mental rotation experiments in Unity, with expertise in \textbf{R/Python} behavioral data analysis. Independently built a multilingual algorithmic trading platform and published MQL5 indicators; trilingual (Spanish/English/Chinese) with a proven record of cross-cultural technical communication.
+\section{Summary}
+Interdisciplinary Cognitive Scientist and PhD Candidate at NCKU specializing in human experimental design, behavioral data analysis, and spatial cognitive processes. Expertise in developing immersive experimental paradigms in Unity and architecting end-to-end data pipelines in R and Python for advanced statistical analysis and computational behavioral modeling. Proven track record in international, cross-cultural research environments with strong focus on understanding human cognitive mechanisms.
 
-\section{education}
+\section{Education}
 \begin{entrylist}
   \entry
-    {2019–}
+    {2019–2026}
     {Ph.D. Candidate in Mind Sciences}
     {National Cheng Kung University (NCKU), Tainan}
     {VR-based research on spatial transformation: how interactivity modulates mental rotation ability in viewpoint-contingent virtual environments.}
@@ -59,98 +96,83 @@ Multidisciplinary professional integrating \textbf{Cognitive Science}, \textbf{D
     {English: 101/120 (High Proficiency). Chinese: Level 3 (Intermediate).}
 \end{entrylist}
 
-\section{experience (Part I)}
+\section{Experience (Part I)}
 \begin{entrylist}
+    \entry
+    {08/25–Now}
+    {Vision Laboratory, NCKU, Tainan}
+    {Research Assistant}
+    {Design advanced experimental paradigms in Unity for human spatial cognition and basic vision research. Develop custom behavioral tracking scripts and data pipelines using Python and R for statistical modeling.}
   \entry
     {08/25–04/26}
     {Live On Language CramSchool, Kaohsiung}
-    {English Teacher}
-    {Instructional delivery for diverse age groups; technical explanation of language structures.}
+    {Language Instructor}
+    {Delivered instructional coursework across diverse age groups. Fostered cross-cultural communication skills}
   \entry
     {02/25–08/25}
     {Sundex, Kaohsiung}
     {Int. Sales Representative \& Customer Support}
-    {Managed international accounts, coordinated order handling and delivery per client specifications.}
+    {Coordinated international client operations, requirements analysis, and technical specifications management.}
   \entry
     {09/18–02/24}
     {Cambridge Language School, Tainan}
     {Spanish and English Teacher}
     {Cross-cultural communication and linguistic training for Spanish and English learners.}
   \entry
-    {05/20–02/24}
-    {AMC Group}
-    {Online English Tutor}
-    {Virtual English tutoring for various proficiency levels.}
-  \entry
-    {10/21–02/22}
-    {American Eagle School, Tainan}
-    {Part-time English Teacher}
-    {Assessment and instructional delivery at beginner level.}
-  \entry
-    {04/16–12/18}
-    {ICFES, Bogotá}
-    {Data Manager}
-    {Developed algorithms for automated item data management of national standardized tests.}
-  \entry
-    {10/15–04/16}
-    {American Eagle School, Taoyuan}
-    {English Teacher}
-    {Foundational English instruction.}
+    {2015–2024}
+    {Various Academic \& Private Educational Institutions, Taiwan}
+    {Language Tutor \& Online Instructor}
+    {Conducted language instruction and student evaluations across Cambridge, AMC Group, and American Eagle School platforms.}
 \end{entrylist}
 
 \newpage
 
-\section{experience (Part II)}
+\section{Experience (Part II)}
 \begin{entrylist}
   \entry
     {01/15–09/15}
-    {Trend Micro, Research Department, Taipei}
-    {Research Intern}
-    {Algorithm development for SPAM identification.}
+    {Trend Micro Research Dept., Taipei}
+    {Computational Research Intern}
+    {Developed text classification and anomaly detection algorithms for automated spam identification, leveraging computational heuristics and natural language processing concepts.}
   \entry
     {09/12–07/15}
-    {National ChengChi University, Taipei}
-    {Research Assistant}
-    {Eye Movement and Reading Laboratory experiments.}
+    {Eye Movement and Reading Laboratory, NCCU, Taipei}
+    {Cognitive Research Assistant}
+    {Programmed and executed eye-tracking paradigms for human cognitive experiments in MATLAB. Managed participant testing, signal collection, and quantitative behavioral data analysis.}
   \entry
     {11/11–04/12}
-    {National Colombian University, Bogotá}
-    {Psychometrician}
-    {Statistical analyses on prisoner data for risk profile generation.}
+    {National University of Colombian, Bogotá}
+    {Psychometrician \& Quantitative Analyst}
+    {Executed advanced statistical analysis and psychometric modeling on complex behavioral datasets to generate empirical risk profiles.}
   \entry
     {09/11–05/12}
     {Antonio Nariño University, Bogotá}
-    {Research Assistant}
-    {Statistical analyses on faculty and student data for institutional audits.}
+    {Data Analyst \& Research Assistant}
+    {Conducted quantitative data analysis and institutional metrics evaluation for large-scale academic audits.}
   \entry
     {03–08/11}
-    {National Colombian University, Bogotá}
-    {Auditor}
-    {Document validation in a national recruitment process.}
+    {National University of Colombian, Bogotá}
+    {Research Auditor}
+    {Executed systematic validation protocols and data auditing for national candidate selection processes.}
 \end{entrylist}
 
-\section{publications and conferences}
+\section{Conferences}
 \begin{entrylist}
   \entry
-    {in prep.}
-    {Manuscript}
-    {NCKU}
-    {\textit{Interactivity Modulates Spatial Transformation Ability: Evidence from a Viewpoint-Contingent VR Mental Rotation Task.}}
-  \entry
     {05/2023}
-    {The International Conference of the Applied Psychology in SDGs \& Annual Meetings \textemdash\ TAPA, Taiwan}
+    {The International Conference of the Applied Psychology in SDGs \& Annual Meetings — TAPA, Taiwan}
     {Oral}
     {Is There a Solution to Procrastination? Course Design and Learning-Effectiveness Evaluation of a Self-Regulated-Learning-Based ``Psychology of Procrastination'' Course. Statistical analysis and data processing.}
   \entry
     {05/2022}
-    {Vision Sciences Society \textemdash\ VSS}
+    {Vision Sciences Society — VSS}
     {Poster}
     {EEG classification of mTBI patients using Random Forest algorithms.}
   \entry
     {07/2019}
-    {15th Asia-Pacific Conference on Vision \textemdash\ APCV, Osaka}
+    {15th Asia-Pacific Conference on Vision — APCV, Osaka}
     {Poster}
-    {Visual complexity distribution of words and saccade targeting in Chinese sentence reading. doi:10.1177/2041669519877985}
+    {Visual complexity distribution of words and saccade targeting in Chinese sentence reading.}
   \entry
     {08/2013}
     {5th Asia Congress of Health Psychology, Daejeon}
@@ -158,9 +180,29 @@ Multidisciplinary professional integrating \textbf{Cognitive Science}, \textbf{D
     {CBT on Chronic Fatigue Syndrome: A meta-analysis.}
   \entry
     {05/2011}
-    {5th Latin American Congress of Psychology \textemdash\ ALAPSA, Xalapa}
+    {5th Latin American Congress of Psychology — ALAPSA, Xalapa}
     {Oral}
     {Psychometric analysis of the Eurotest for mild cognitive impairment screening.}
+\end{entrylist}
+\newpage
+
+\section{Publications}
+\begin{entrylist}
+  \entry
+    {in prep.}
+    {Manuscript}
+    {NCKU, Universitat Jaume I, \& University of Cincinnati}
+    {\textit{Interactivity Modulates Spatial Transformation Ability: Evidence from a Viewpoint-Contingent VR Mental Rotation Task.}}
+  \entry
+    {in prep.}
+    {Manuscript}
+    {NCKU \& University of New Mexico}
+    {\textit{EEG Classification of Visuospatial Working Memory in mTBI: Within-Subject Inflation, Diagnostic Null, and LOSO-CV Bench-marking}}
+  \entry
+    {in prep.}
+    {Manuscript}
+    {NCKU \& National ChengChi University}
+    {\textit{The Effect of Word`s Visual Complexity Distribution on Saccade Targeting in Reading Chinese Sentences}}
   \entry
     {2014}
     {Avendaño-Prieto, B.L., Avendaño-Prieto, G., Cruz-Molina, W., \& Cárdenas-Avendaño, A.}
@@ -173,23 +215,22 @@ Multidisciplinary professional integrating \textbf{Cognitive Science}, \textbf{D
     {Adaptation to the Colombian context of the screening test for the evaluation of dementia (EuroTest).}
 \end{entrylist}
 
-\clearpage
-\section{applications and websites}
+\section{Applications and websites}
 \begin{entrylist}
-  \entry
-    {2025}
-    {Apex Fintech}
-    {Taiwan}
-    {Interface development for financial services. \href{https://apexfintech.net/}{apexfintech.net}}
-  \entry
+\entry
     {2026}
     {Scroll Master}
     {Speed Reading App}
     {Speed-reading web app for building faster reading pace and comprehension. \href{https://scroll-master.wi-cruzm.workers.dev/}{scroll-master.wi-cruzm.workers.dev}}
   \entry
+    {2025}
+    {Apex Fintech}
+    {Algorithmic Trading}
+    {Interface development for financial services. \href{https://apexfintech.net/}{apexfintech.net}}
+  \entry
     {2024}
     {Market Shift \& FVG}
-    {MQL5 Market}
+    {MQL5 Market Indicator and Trading algorithms}
     {MetaTrader 5 indicator for market structure and fair value gap detection. \href{https://www.mql5.com/en/market/product/131053}{mql5.com}}
 \end{entrylist}
 

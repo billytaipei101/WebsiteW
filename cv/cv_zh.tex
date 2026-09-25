@@ -8,24 +8,36 @@
 \usepackage{unicode-math}
 \setmathfont{latinmodern-math.otf}
 
+% Extra colors matching the English CV's extended cycle.
+\definecolor{teal}{HTML}{4DB6AC}
+\definecolor{gold}{HTML}{FBC02D}
+\definecolor{coral}{HTML}{FF8A65}
+\definecolor{indigo}{HTML}{7986CB}
+
 % friggeri-cv's default \section colors only the first 3 tokens of the title (e.g. "sum"+"mary");
-% that grabs past short CJK titles like "學歷" and crashes. Color the whole title instead.
+% that grabs past short CJK titles like "學歷" and crashes. Color the whole title instead, cycling
+% through the same extended palette as cv_en.tex.
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
     \LARGE\headingfont\color{%
       \ifcase\value{colorCounter}%
-        blue\or red\or orange\or green\or purple\else%
+        blue\or red\or orange\or green\or purple\or%
+        teal\or gold\or coral\or indigo\else%
         headercolor\fi%
     }#1%
   }
-  \stepcounter{colorCounter}
+  \ifnum\value{colorCounter}<8
+    \stepcounter{colorCounter}
+  \else
+    \setcounter{colorCounter}{0}
+  \fi
   \par\vspace{\parskip}
 }
 
 \begin{document}
 \header{孟}{威廉}
-       {數據科學 · VR開發 · 統計分析}
+       {認知科學 · 計算行為研究 · 進階統計分析}
 
 \begin{aside}
   \section{聯絡資訊}
@@ -33,27 +45,27 @@
     +886 966 159 200
     \href{mailto:wi.cruzm@gmail.com}{wi.cruzm@gmail.com}
   \section{語言能力}
-    西班牙語（母語）
-    英語（流利）
-    中文（中級）
+    英語與西班牙語（流利）
+    中文（中高級）
   \section{程式技能}
     R/RStudio、Python、MATLAB、
     Unity、\LaTeX、VS Code、
-    網站開發、MS Office
+    Git、Shell 腳本
   \section{核心能力}
-    VR應用開發
-    資料管理
-    技術文件撰寫
-    客戶關係管理
+    實驗設計
+    進階統計建模
+    行為資料分析
+    空間認知與VR方法
+    跨領域研究
 \end{aside}
 
 \section{個人簡介}
-跨領域專業人士，整合\textbf{認知科學}、\textbf{資料工程}與\textbf{軟體開發}。現為國立成功大學博士候選人，以Unity開發視角依存VR心理旋轉實驗研究空間轉換能力，具備\textbf{R/Python}行為資料分析專長。獨立開發多語言演算法交易平台並發表MQL5指標；三語流利（西班牙語／英語／中文），擅長跨文化技術溝通。
+跨領域認知科學家，國立成功大學博士候選人，專精人類實驗設計、行為資料分析與空間認知歷程。擅長以Unity開發沉浸式實驗典範，並建構R與Python端對端資料管線進行進階統計分析與計算行為建模。具備國際跨文化研究環境的實務經驗，專注於理解人類認知機制。
 
 \section{學歷}
 \begin{entrylist}
   \entry
-    {2019–}
+    {2019–2026}
     {心智科學研究所　博士候選人}
     {國立成功大學（NCKU），台南}
     {以視角依存VR心理旋轉任務探討互動性對空間轉換能力之影響。}
@@ -76,41 +88,31 @@
 
 \section{工作經歷（一）}
 \begin{entrylist}
+    \entry
+    {08/25–至今}
+    {國立成功大學視覺實驗室，台南}
+    {研究助理}
+    {以Unity設計人類空間認知與基礎視覺研究之進階實驗典範；使用Python與R開發客製化行為追蹤腳本與統計建模資料管線。}
   \entry
     {08/25–04/26}
     {Live On Language 補習班，高雄}
-    {英語教師}
-    {針對不同年齡層學生提供英語教學；講授語言結構與溝通技巧。}
+    {語言教師}
+    {為不同年齡層學生授課；培養跨文化溝通能力。}
   \entry
     {02/25–08/25}
     {Sundex，高雄}
     {國際業務代表暨客戶支援}
-    {管理國際客戶帳戶，依客戶規格協調訂單處理與配送。}
+    {協調國際客戶營運、需求分析與技術規格管理。}
   \entry
     {09/18–02/24}
     {劍橋語言學校，台南}
     {西班牙語及英語教師}
     {為西語及英語學習者提供跨文化溝通訓練與語言教學。}
   \entry
-    {05/20–02/24}
-    {AMC Group}
-    {線上英語家教}
-    {各程度學員線上英語輔導教學。}
-  \entry
-    {10/21–02/22}
-    {美國鷹語言學校，台南}
-    {兼職英語教師}
-    {英語初級教學與學習評量。}
-  \entry
-    {04/16–12/18}
-    {ICFES，波哥大}
-    {資料管理師}
-    {開發全國標準化考試題目資料自動化管理演算法。}
-  \entry
-    {10/15–04/16}
-    {美國鷹語言學校，桃園}
-    {英語教師}
-    {英語基礎教學。}
+    {2015–2024}
+    {台灣多所學術及私立教育機構}
+    {語言家教暨線上講師}
+    {於劍橋語言學校、AMC Group 及美國鷹語言學校等平台進行語言教學與學員評量。}
 \end{entrylist}
 
 \newpage
@@ -120,37 +122,32 @@
   \entry
     {01/15–09/15}
     {趨勢科技研究部門，台北}
-    {研究實習生}
-    {垃圾郵件識別演算法開發。}
+    {計算研究實習生}
+    {開發文字分類與異常偵測演算法以進行垃圾郵件自動識別，運用計算啟發式方法與自然語言處理概念。}
   \entry
     {09/12–07/15}
-    {國立政治大學心理系，台北}
-    {研究助理}
-    {眼動與閱讀實驗室實驗執行與資料收集。}
+    {國立政治大學眼動與閱讀實驗室，台北}
+    {認知研究助理}
+    {以MATLAB設計並執行人類認知實驗之眼動追蹤典範；負責受試者測試、訊號收集與量化行為資料分析。}
   \entry
     {11/11–04/12}
-    {哥倫比亞國立大學心理系，波哥大}
-    {心理計量師}
-    {對受刑人資料進行大規模統計分析，生成風險輪廓。}
+    {哥倫比亞國立大學，波哥大}
+    {心理計量師暨量化分析師}
+    {對複雜行為資料集執行進階統計分析與心理計量建模，生成實證風險輪廓。}
   \entry
     {09/11–05/12}
-    {安東尼奧·納里尼奧大學心理系，波哥大}
-    {研究助理}
-    {對教師及學生資料進行統計分析，支援機構審計。}
+    {安東尼奧·納里尼奧大學，波哥大}
+    {資料分析師暨研究助理}
+    {為大規模學術審計進行量化資料分析與機構指標評估。}
   \entry
     {03–08/11}
-    {哥倫比亞國立大學心理系，波哥大}
-    {審計員}
-    {全國招募甄試文件審查與驗證。}
+    {哥倫比亞國立大學，波哥大}
+    {研究審計員}
+    {為全國考生甄選流程執行系統性驗證程序與資料審查。}
 \end{entrylist}
 
-\section{著作與研討會}
+\section{研討會}
 \begin{entrylist}
-  \entry
-    {撰稿中}
-    {學術論文}
-    {國立成功大學}
-    {\textit{互動性調節空間轉換能力：來自視角依存VR心理旋轉任務的實證。}}
   \entry
     {05/2023}
     {永續發展目標應用心理學國際研討會暨年會（TAPA），台灣}
@@ -176,6 +173,26 @@
     {第5屆拉丁美洲健康心理學大會（ALAPSA），哈拉帕}
     {口頭發表}
     {Eurotest 心理計量分析：輕度認知障礙篩查測試。}
+\end{entrylist}
+\newpage
+
+\section{著作}
+\begin{entrylist}
+  \entry
+    {撰稿中}
+    {學術論文}
+    {國立成功大學、Universitat Jaume I 及辛辛那提大學}
+    {\textit{互動性調節空間轉換能力：來自視角依存VR心理旋轉任務的實證。}}
+  \entry
+    {撰稿中}
+    {學術論文}
+    {國立成功大學及新墨西哥大學}
+    {\textit{輕度腦創傷患者視覺空間工作記憶之腦電圖分類：受試者內膨脹、診斷虛無與留一受試者交叉驗證基準測試。}}
+  \entry
+    {撰稿中}
+    {學術論文}
+    {國立成功大學及國立政治大學}
+    {\textit{詞彙視覺複雜度分布對中文句子閱讀中眼跳目標之影響。}}
   \entry
     {2014}
     {Avendaño-Prieto, B.L., Avendaño-Prieto, G., Cruz-Molina, W., \& Cárdenas-Avendaño, A.}
@@ -188,23 +205,22 @@
     {Eurotest 失智篩查測試之哥倫比亞版本文化適應研究。}
 \end{entrylist}
 
-\clearpage
 \section{應用程式與網站}
 \begin{entrylist}
-  \entry
-    {2025}
-    {Apex Fintech}
-    {台灣}
-    {金融服務介面開發。\href{https://apexfintech.net/}{apexfintech.net}}
-  \entry
+\entry
     {2026}
     {Scroll Master}
     {速讀應用程式}
     {協助使用者提升閱讀速度與理解力的速讀網頁應用程式。\href{https://scroll-master.wi-cruzm.workers.dev/}{scroll-master.wi-cruzm.workers.dev}}
   \entry
+    {2025}
+    {Apex Fintech}
+    {演算法交易}
+    {金融服務介面開發。\href{https://apexfintech.net/}{apexfintech.net}}
+  \entry
     {2024}
     {Market Shift \& FVG}
-    {MQL5 市場}
+    {MQL5 市場指標與交易演算法}
     {MetaTrader 5 市場結構與公允價值缺口偵測指標。\href{https://www.mql5.com/en/market/product/131053}{mql5.com}}
 \end{entrylist}
 
