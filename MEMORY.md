@@ -238,6 +238,20 @@ plan/phases and a short pointer here instead of full `WebsiteW` detail.
   missing from Heiti TC) for `·` in the tagline. **Any future CV rebuild must run xelatex twice**
   (or via `latexmk`) or the header silently disappears with no error — verified via headless-Chrome
   screenshots of all 3 pages after the fix. Committed as `d603e36`.
+- **Reversal same session**: William reviewed his Desktop `CV_Project/cv_en.tex` more closely and
+  confirmed it (not the repo's simpler version) is the one he wants live — reversing the earlier
+  "keep repo's simpler cv_en.tex" call. Synced it in: new tagline ("Cognitive Science ·
+  Computational Behavioral Research · Advanced Statistics"), new Vision Laboratory NCKU RA role
+  (current), teaching jobs consolidated into one 2015–2024 entry, Conferences and Publications
+  split into two sections, extended 9-color section-heading palette (added teal/gold/coral/
+  indigo). Found and fixed a real bug carried over from the Desktop source: an unescaped `&` in
+  "Spatial Cognition & VR Methods" broke xelatex compilation (`Misplaced alignment tab character`)
+  — **fixed here but William's Desktop master copy still has the bug**, flagged to him directly to
+  fix there too. `cv_zh.tex` fully resynced again to match (extended the earlier crash-fix's color
+  cycle to all 9 colors). Site bio paragraph (`content/authors/adminWill/_index.md`) intentionally
+  **left unchanged** — William's call to keep it as independently-maintained copy, not mirroring
+  the CV's new framing. Verified both PDFs compile cleanly (2 xelatex passes each) and render
+  correctly via screenshots of all pages. Committed as `c4b0356`.
 
 ## Still open
 
@@ -247,8 +261,9 @@ plan/phases and a short pointer here instead of full `WebsiteW` detail.
   having real content to link from).
 - Visual inconsistency flagged, not fixed: the Flight 101 post's cover image (pastel gradient) vs.
   the other two posts' dark-navy AI-generated covers — William's choice, not acted on.
-- Desktop `CV_Project`'s newer `cv_en.tex` (Aug 14) not yet synced into this repo — William chose
-  to keep the repo's simpler version for now (see 2026-09-25 log entry); revisit if he wants the
-  richer content live.
-- Uncommitted at end of 2026-09-25 session: a one-line comment addition in `cv/cv_en.tex`
-  (pre-existing, unrelated to the CV work above).
+- Desktop `CV_Project/cv_en.tex` still has the unescaped-`&` bug ("Spatial Cognition & VR
+  Methods") that was fixed in this repo's copy — William needs to fix it there too (`\&`) so his
+  master source compiles and stays consistent with the repo.
+- Uncommitted at end of 2026-09-25 session: `menus.toml`'s Courses-link fix (psychstat, not
+  psycoder) and unrelated pre-existing changes (`.DS_Store`) — left for William to review/push via
+  GitHub Desktop.
