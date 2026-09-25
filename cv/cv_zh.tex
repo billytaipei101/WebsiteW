@@ -8,6 +8,14 @@
 \usepackage{unicode-math}
 \setmathfont{latinmodern-math.otf}
 
+% Style all \href links (website URLs and the contact email) blue and underlined; ulem's \uline
+% (rather than plain \underline) keeps working when the linked text wraps across lines. The main
+% font has Color=textcolor baked in via fontspec, which overrides plain \color switches, so we
+% render link text in \bodyfont instead (no forced color) for the blue to actually show.
+\usepackage[normalem]{ulem}
+\let\OrigHref\href
+\renewcommand{\href}[2]{\OrigHref{#1}{\bodyfont\color{blue}\uline{#2}}}
+
 % Extra colors matching the English CV's extended cycle.
 \definecolor{teal}{HTML}{4DB6AC}
 \definecolor{gold}{HTML}{FBC02D}
