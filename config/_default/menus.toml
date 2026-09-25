@@ -8,11 +8,10 @@
 #  url = "#hero"
 #  weight = 10
 
-# TODO: Re-enable once https://psychstat.netlify.app/en/ (Stats Station) is populated with content.
-#[[main]]
-#  name = "Courses"
-#  url = "https://psychstat.netlify.app/en/"
-#  weight = 10
+[[main]]
+  name = "Courses"
+  url = "https://psychstat.netlify.app/en/"
+  weight = 10
 
 [[main]]
   name = "Posts"
