@@ -13,6 +13,7 @@
 % font has Color=textcolor baked in via fontspec, which overrides plain \color switches, so we
 % render link text in \bodyfont instead (no forced color) for the blue to actually show.
 \usepackage[normalem]{ulem}
+\hypersetup{colorlinks=true, urlcolor=blue}
 \let\OrigHref\href
 \renewcommand{\href}[2]{\OrigHref{#1}{\bodyfont\color{blue}\uline{#2}}}
 
