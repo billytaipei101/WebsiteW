@@ -38,7 +38,7 @@ websites:
   url: "https://apexfintech.net/"
 - title: Scroll Master
   description: Speed Reading App
-  url: "https://scroll-master.wi-cruzm.workers.dev/"
+  url: "https://scrollmaster.app/"
 - title: Stats Station
   description: Statistics, Machine Learning and Data Analysis
   url: "https://psychstat.netlify.app/en/"

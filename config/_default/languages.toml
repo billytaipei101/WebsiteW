@@ -1,20 +1,24 @@
 # Languages
-#   Create a `[X]` block for each language you want, where X is the language ID.
-#   Refer to https://sourcethemes.com/academic/docs/language/
+#   English lives in `content/`, Traditional Chinese in `content_zh/` (same file paths, so each
+#   Chinese page is automatically linked to its English counterpart for the language toggle).
+#   Menus are per language: `menus.en.toml` / `menus.zh.toml`. Interface strings: `i18n/`.
 
-# Configure the English version of the site.
 [en]
   languageCode = "en-us"
-  # contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  languageName = "English"
+  weight = 1
+  contentDir = "content"
+  [en.params]
+    lang_label = "EN"
 
-# Uncomment the lines below to configure your website in a second language.
-#[zh]
-#  languageCode = "zh-Hans"
-#  contentDir = "content/zh"
-#  title = "Chinese website title..."
-#  [zh.params]
-#    description = "Site description in Chinese..."
-#  [[zh.menu.main]]
-#    name = "Wo"
-#    url = "#about"
-#    weight = 1
+[zh]
+  languageCode = "zh-Hant"
+  languageName = "中文"
+  weight = 2
+  contentDir = "content_zh"
+  [zh.params]
+    lang_label = "中"
+    date_format = "2006年1月2日"
+  [zh.params.publications]
+    date_format = "2006年1月"
+    citation_style = "apa"

@@ -46,7 +46,8 @@ Cross-links so far (both directions now exist):
   languages, websites, social links. Rendered by a **site-level override** of the theme's About
   widget (`layouts/partials/widgets/about.html`) — the theme's stock version only supports
   Interests/Education; Languages and Websites sections were added by extending this override.
-- Experience: `content/home/experience.md` — auto-sorted by `date_start` descending, no need to
+- Experience: `content/experience/experience-section.md` (shown on the `/experience/` page; the
+  copy in `content/home/experience.md` is inactive) — auto-sorted by `date_start` descending, no need to
   order entries manually in the file.
 - Site-wide contact/social config: `config/_default/params.toml`.
 - Site-level CSS/JS overrides live in `layouts/partials/custom_head.html` (the theme's sanctioned
@@ -275,6 +276,38 @@ plan/phases and a short pointer here instead of full `WebsiteW` detail.
   fix. **Lesson: this local clone is actively shared with William's own GitHub Desktop commits —
   don't assume a clean starting `git status` mid-session, and re-check `git log`/`git status` after
   any pause where he might have committed.**
+
+### 2026-11-16 — Bilingual site (EN / 中文), Scroll Master project, ICFES entry
+
+- **Site is now bilingual.** English stays in `content/` (served at `/`); Traditional Chinese lives
+  in a sibling **`content_zh/`** (served at `/zh/`), with the *same file paths* so Hugo links each
+  page to its translation. Configured in `config/_default/languages.toml` (`contentDir` per
+  language). **Any new page needs a matching file in `content_zh/`** or it won't appear on the
+  Chinese site. Images/PDFs inside a page bundle are shared automatically — only the `.md` is
+  duplicated.
+- **Menus are per language**: `menus.toml` was renamed `menus.en.toml`; `menus.zh.toml` added (its
+  CV link points to `files/cv_zh.pdf`).
+- **Language toggle**: site-level override `layouts/partials/navbar.html` (copy of the theme's
+  navbar) — icon + "EN"/"中" label, dropdown listing English/中文, opens on hover or click, links to
+  the same page in the other language. It also stops `files/...` menu links getting a `/zh/`
+  prefix. Styling is in `custom_head.html`.
+- **Interface strings**: `i18n/zh.yaml` is a copy of the theme's `zh-Hant.yaml` (so `/zh/` is
+  Traditional, not the theme's Simplified `zh.yaml`) plus a few site keys; `i18n/en.yaml` holds
+  only the site keys (Languages/Websites headings in the About widget override).
+- Translated: all homepage sections, profile, experience page, 3 posts, 4 projects, 5 talks,
+  3 publications. Tags were left in English; the two Spanish journal-article titles were kept in
+  the original.
+- **New project card**: `content/project/scroll-master/` uses `external_link` so the card opens
+  `https://scrollmaster.app/` directly (the old `scroll-master.wi-cruzm.workers.dev` URL is gone
+  from the site and CVs).
+- **CVs**: `cv_en.tex` / `cv_zh.tex` got the new Scroll Master domain and a 2018 "ICFES Algorithm
+  for National Performance Assessment" entry; rebuilt and copied to `static/files/`. A separate
+  TSMC-oriented variant `cv/cv_zh_swat.tex` (SWOT / future-plans sections) is not served by the
+  site. LaTeX gotcha found there: to keep a section heading on the same page as its content you
+  need `\nobreak` after the heading **and** `\leavevmode` before the heading's `\color`, otherwise
+  the colour switch is stranded on the previous page and tints the sidebar text.
+- Verified with Hugo 0.83.1 (`~/Library/Application Support/Hugo/0.83.1/hugo --gc --minify`):
+  0 errors, internal-link check clean, screenshots of `/` and `/zh/`. Not committed/pushed.
 
 ## Still open
 

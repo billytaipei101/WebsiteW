@@ -62,4 +62,22 @@
     height: 90px;
     object-fit: contain;
   }
+  /* Language switcher (layouts/partials/navbar.html override): globe-style icon plus the
+     current language label; the menu opens on hover as well as on click. */
+  .lang-switch .nav-link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .lang-switch-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  @media (hover: hover) {
+    .lang-switch:hover > .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+  }
 </style>

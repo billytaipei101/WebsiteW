@@ -43,7 +43,7 @@ experience:
   company_url: "https://www.icfes.gov.co"
   date_end: "2019-08-31"
   date_start: "2016-04-01"
-  description: Psychometrist and Data Manager.
+  description: Psychometrist and Data Manager. Developed a proprietary ICFES algorithm for national performance assessment (2018).
   location: Colombia
   title: Psychometrist
 - company: National Cheng Kung University (NCKU)

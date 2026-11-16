@@ -1,0 +1,36 @@
+# Navigation Links (Chinese) — mirrors menus.en.toml.
+
+[[main]]
+  name = "課程"
+  url = "https://psychstat.netlify.app/en/"
+  weight = 10
+
+[[main]]
+  name = "文章"
+  url = "#posts"
+  weight = 20
+
+[[main]]
+  name = "專案"
+  url = "#projects"
+  weight = 30
+
+[[main]]
+  name = "著作"
+  url = "#publications"
+  weight = 40
+
+[[main]]
+  name = "聯絡"
+  url = "#contact"
+  weight = 50
+
+[[main]]
+  name = "經歷"
+  url = "/experience/"
+  weight = 60
+
+[[main]]
+  name = "履歷"
+  url = "files/cv_zh.pdf"
+  weight = 70

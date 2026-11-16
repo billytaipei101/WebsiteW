@@ -108,7 +108,7 @@
 
       {{ with $person.languages }}
       <div class="col-12 languages-section">
-        <h3>Languages</h3>
+        <h3>{{ i18n "languages_heading" }}</h3>
         <ul class="ul-interests">
           {{ range . }}
           <li>{{ .name }}{{ with .level }} &mdash; {{ . }}{{ end }}</li>
@@ -128,7 +128,7 @@
 
       {{ with $person.websites }}
       <div class="col-12 websites-section">
-        <h3>Websites</h3>
+        <h3>{{ i18n "websites_heading" }}</h3>
         <ul class="ul-interests">
           {{ range . }}
           <li>

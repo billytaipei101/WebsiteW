@@ -1,0 +1,24 @@
+Dear Hiring Manager,
+
+I am writing to express my interest in HR-related opportunities at TSMC, particularly in People Analytics, HR Analytics, Talent Development, Learning & Development, and HR Project Management.
+
+I am an interdisciplinary cognitive scientist and Ph.D. candidate at National Cheng Kung University, with more than ten years of experience across behavioral research, quantitative analysis, education, and international business support. Throughout my academic and professional work, one question has guided me: how can we better understand people through data, and how can that understanding support their development and their organization's performance? It has shaped both my research and my career direction.
+
+My doctoral training in cognitive science has given me hands-on experience with experimental design, behavioral data analysis, statistical modeling, and quantitative research. I work regularly with R, Python, MATLAB, and Unity, and I have built data-processing pipelines, analyzed complex behavioral datasets, and applied statistical and machine-learning methods to find meaningful patterns and individual differences. I see these skills as highly transferable to human resources. People analytics requires more than working with numbers. It requires understanding human behavior, weighing evidence carefully, and turning data into information that supports better decisions.
+
+My experience in education points in the same direction. As an English and Spanish instructor, I worked with learners of different ages, abilities, and cultural backgrounds. I designed individualized learning programs, assessed performance, monitored progress, and adjusted my approach to each learner's needs. I also contributed to a psychology-based course on procrastination and self-regulated learning, where I handled the data processing and statistical analysis of learning outcomes. These experiences taught me that good development rarely works by applying one approach to everyone. It requires understanding individual differences, identifying development needs, and checking whether an intervention actually works. That is what draws me to Learning & Development, talent management, and People Analytics.
+
+My professional experience also includes work as an International Business Representative and Client Support professional, where I managed communication with international clients, analyzed their requirements, coordinated with internal teams, and followed up on operational issues. That role strengthened my ability to communicate across functions and cultures, to turn different perspectives into practical requirements, and to move projects forward collaboratively. I am fluent in English and Spanish and have working proficiency in Mandarin Chinese. Having studied and worked in both Taiwan and Colombia, I am comfortable in multicultural, international environments.
+
+I am interested in TSMC because it combines advanced technology, global operations, and a strong emphasis on talent. I believe that managing HR well in a highly technical, global organization requires both a deep understanding of people and a strong ability to work with data. I hope to bring together three capabilities that have shaped my career: understanding people through psychology and behavioral science, understanding data through statistics and computational analysis, and connecting people and ideas through communication and collaboration.
+
+If given the opportunity to join TSMC, I would be eager to learn the organization's HR systems and business operations, contribute to practical HR projects, and gradually build expertise in People Analytics, talent development, and data-driven HR decision-making. I am particularly motivated by work that bridges people, data, and organizational strategy, and that turns analytical insight into meaningful improvements for employees and the company.
+
+Thank you for considering my application. I would welcome the opportunity to discuss how my interdisciplinary background and data-driven approach could contribute to TSMC's human resources team.
+
+Sincerely,
+
+William Alberto Cruz Molina
+Kaohsiung / Tainan, Taiwan
++886 966 159 200
+wi.cruzm@gmail.com

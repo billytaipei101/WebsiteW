@@ -1,0 +1,310 @@
+% !TEX program = xelatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass[]{friggeri-cv}
+
+\usepackage{graphicx}
+\usepackage{xeCJK}
+\setCJKmainfont{Heiti TC}
+\usepackage{unicode-math}
+\setmathfont{latinmodern-math.otf}
+
+% Style contact email blue and underlined; ulem's \uline (rather than plain \underline) keeps
+% working when the linked text wraps. The main font has Color=textcolor baked in via fontspec,
+% so link text is rendered in \bodyfont to let the blue show.
+\usepackage[normalem]{ulem}
+\hypersetup{colorlinks=true, urlcolor=blue}
+\let\OrigHref\href
+\renewcommand{\href}[2]{\OrigHref{#1}{\bodyfont\color{blue}\uline{#2}}}
+
+% Extra colors matching the English CV's extended cycle.
+\definecolor{teal}{HTML}{4DB6AC}
+\definecolor{gold}{HTML}{FBC02D}
+\definecolor{coral}{HTML}{FF8A65}
+\definecolor{indigo}{HTML}{7986CB}
+
+% friggeri-cv's default \section colors only the first 3 tokens of the title; that breaks on short
+% CJK titles. Color the whole title instead, cycling through the same extended palette.
+\renewcommand{\section}[1]{
+  \par\vspace{\parskip}
+  {%
+    % \leavevmode starts the paragraph first, so the colour switch travels with the heading line
+    % instead of being left behind on the previous page (where it would tint the sidebar).
+    \leavevmode\LARGE\headingfont\color{%
+      \ifcase\value{colorCounter}%
+        blue\or red\or orange\or green\or purple\or%
+        teal\or gold\or coral\or indigo\else%
+        headercolor\fi%
+    }#1%
+  }
+  \ifnum\value{colorCounter}<8
+    \stepcounter{colorCounter}
+  \else
+    \setcounter{colorCounter}{0}
+  \fi
+  % \nobreak keeps the heading on the same page as the content that follows it.
+  \par\nobreak\vspace{\parskip}
+}
+
+% Never strand a bold sub-heading (or a single line of a paragraph) at a page boundary.
+\clubpenalty=10000
+\widowpenalty=10000
+
+\begin{document}
+\header{William Cruz - }{孟威廉}
+       {人力資源分析 · 人才發展 · 行為資料科學}
+
+\begin{aside}
+  \section{聯絡資訊}
+    高雄市，台灣
+    +886 966 159 200
+    \href{mailto:wi.cruzm@gmail.com}{wi.cruzm@gmail.com}
+  \section{語言能力}
+    英語與西班牙語（流利）
+    中文（中高級）
+  \section{程式技能}
+    R/RStudio、Python、MATLAB、
+    Unity、\LaTeX、VS Code、
+    Git、Shell 腳本
+  \section{核心能力}
+    人才數據分析
+    學習成效評估
+    行為資料建模
+    跨部門協調
+    跨文化溝通
+\end{aside}
+
+\section{個人簡介}
+具十餘年跨領域經驗的認知科學家，現為國立成功大學博士候選人。長期以實驗與行為資料理解人的學習與決策歷程，並將分析結果轉化為可執行的建議。曾為不同背景的學員設計個別化學習方案、評估成效並調整策略，也曾於跨國客戶服務中協調需求與跨部門溝通。期望將研究、教學與資料分析的經驗投入人才分析、人才發展與學習發展的工作，協助組織以證據做出人才決策。
+
+\section{專長}
+\textbf{人才分析}\\
+行為資料分析、統計建模、個別差異辨識，以及將數據整理為管理決策可用的資訊。
+
+\textbf{人才發展與學習}\\
+個別化學習方案設計、培訓成效評估、學習歷程追蹤，並依結果調整教學與培訓策略。
+
+\textbf{人資實務}\\
+2011 年於哥倫比亞國立大學擔任審計員暨人資助理，負責全國考生甄選流程之系統性驗證與資料審查。
+
+\textbf{研究與計量方法}\\
+實驗設計、心理計量分析、機器學習應用（隨機森林）、眼動與腦電圖資料處理。
+
+\textbf{專案協調與跨文化溝通}\\
+需求分析、跨部門與國際利害關係人溝通，英文、西班牙文流利，具台灣與哥倫比亞的多元工作經驗。
+
+\section{學歷}
+\begin{entrylist}
+  \entry
+    {2019–2026}
+    {心智科學研究所　博士候選人}
+    {國立成功大學（NCKU），台南}
+    {研究主題為互動式虛擬實境與空間轉換能力，探討互動性如何影響心理旋轉表現。}
+  \entry
+    {2012–2015}
+    {實驗心理學　理學碩士}
+    {國立政治大學（NCCU），台北}
+    {主修實驗心理學與眼動研究；負責研究儀器校準與實驗設計。}
+  \entry
+    {2006–2011}
+    {心理學　理學學士}
+    {哥倫比亞國立大學，波哥大}
+    {主修心理計量與統計分析。}
+  \entry
+    {2018 / 2015}
+    {語言能力檢定證書}
+    {TOEFL / TOCFL}
+    {英語：101/120（高等）；華語：第三級（中級）。}
+\end{entrylist}
+
+\section{工作經歷}
+\begin{entrylist}
+  \entry
+    {08/25–至今}
+    {國立成功大學視覺實驗室，台南}
+    {研究助理}
+    {設計沉浸式虛擬實境實驗，建立結構化的資料蒐集流程；以 Python 與 R 建置資料處理與統計分析管線，並與不同專業背景的研究者共同規劃研究。}
+  \entry
+    {02/25–08/25}
+    {Sundex，高雄}
+    {國際業務代表暨客戶支援}
+    {與國際客戶溝通並分析需求，將客戶需求轉化為內部團隊可執行的技術與服務規格，跟進問題以促成及時解決。}
+  \entry
+    {08/25–04/26}
+    {Live On Language 補習班，高雄}
+    {語言教師}
+    {依學員年齡、程度與需求設計授課內容，評量學習成果並持續追蹤進度。}
+  \entry
+    {09/18–02/24}
+    {劍橋語言學校，台南}
+    {西班牙語及英語教師}
+    {為學員設計個別化學習方案，評估學習成果、監控進度，並依表現調整教學策略；為不同文化背景的學員提供跨文化溝通訓練。}
+  \entry
+    {2015–2024}
+    {台灣多所學術及私立教育機構}
+    {語言家教暨線上講師}
+    {於劍橋語言學校、AMC Group 及美國鷹語言學校等平台進行語言教學與學員評量。}
+  \entry
+    {01/15–09/15}
+    {趨勢科技研究部門，台北}
+    {計算研究實習生}
+    {開發文字分類與異常偵測演算法，以自動識別垃圾郵件；運用計算啟發式方法與自然語言處理概念。}
+  \entry
+    {09/12–07/15}
+    {國立政治大學眼動與閱讀實驗室，台北}
+    {認知研究助理}
+    {以 MATLAB 設計並執行眼動追蹤實驗；負責受試者施測、資料收集品管與量化行為資料分析。}
+  \entry
+    {11/11–04/12}
+    {哥倫比亞國立大學，波哥大}
+    {心理計量師暨量化分析師}
+    {對複雜行為資料集進行統計分析與心理計量建模，產出實證風險輪廓。}
+  \entry
+    {09/11–05/12}
+    {安東尼奧·納里尼奧大學，波哥大}
+    {資料分析師暨研究助理}
+    {為大規模學術稽核進行量化資料分析，並評估機構指標。}
+  \entry
+    {03–08/11}
+    {哥倫比亞國立大學，波哥大}
+    {審計員暨人資助理}
+    {為全國考生甄選流程執行系統性驗證程序與資料審查。}
+\end{entrylist}
+
+\section{未來規劃}
+\textbf{短期（1 年內）}\\
+取得人力資源相關專業證照，熟悉人事資料流程與 HRIS 系統；完成博士學業並整理研究成果。同時學習 SQL 與 Power BI 等工具，強化人才數據的整理與視覺化能力。
+
+\textbf{中期（1–3 年）}\\
+進入人才發展、學習與發展（L\&D）或人才分析團隊，參與培訓成效評估、人才盤點與職能模型等專案。將研究中的統計方法應用於人才評估與培訓成效分析，並逐步累積半導體產業的人資實務經驗。
+
+\textbf{長期（3–5 年）}\\
+成為能連結資料與組織策略的人資專業人員，協助組織依據數據設計人才培育與留任策略，建立以證據為本的人才發展機制，並推動跨文化、跨地區的人才管理實踐。
+
+\section{缺乏的部分與補強計畫}
+\textbf{正式人資經驗}\\
+現況：目前的人資經驗以研究、教學與 2011 年的甄選流程工作為主。補強：透過專案參與、證照課程與人資研討會累積實務知識。
+
+\textbf{人資系統與專業知識}\\
+現況：尚未有 HRIS 系統、薪酬或勞動法規的實務操作經驗。補強：熟悉人事流程與勞動法規基礎，並學習主流人資系統的資料結構。
+
+\textbf{半導體產業知識}\\
+現況：對產業的組織文化、營運流程與人才結構尚不熟悉。補強：研讀產業報告與公司資訊，了解技術人力的培育與發展脈絡。
+
+\textbf{中文商務書寫}\\
+現況：中文為中高級，正式商務文件與職場用語仍需加強。補強：練習撰寫正式的中文報告與電子郵件，並累積實際的職場溝通經驗。
+
+\section{SWOT 分析}
+\begin{center}
+\begin{tabular}{@{}p{0.48\linewidth}@{\hspace{0.03\linewidth}}p{0.48\linewidth}@{}}
+  \textbf{優勢 Strengths} & \textbf{劣勢 Weaknesses} \\[4pt]
+  跨領域背景：兼具認知科學、統計與程式能力，能同時理解人與數據。
+  &
+  缺乏正式人資工作年資與 HRIS 系統實務經驗。 \\[6pt]
+  具備學員評量與學習成效評估經驗，熟悉個別差異的分析與應用。
+  &
+  尚未取得人資專業證照。 \\[6pt]
+  研究訓練完整：實驗設計、統計推論與研究倫理。
+  &
+  對半導體產業的組織文化與營運流程尚不熟悉。 \\[6pt]
+  英文、西班牙文流利，具跨國與跨文化工作經驗。
+  &
+  中文商務書寫仍待加強。 \\[6pt]
+  \textbf{機會 Opportunities} & \textbf{威脅 Threats} \\[4pt]
+  企業日益重視人才數據與人才發展，人資分析需求持續成長。
+  &
+  人資領域競爭者多，多數具正式人資背景。 \\[6pt]
+  半導體產業持續擴張，技術人才的培育與留任成為關鍵課題。
+  &
+  博士學歷可能被視為過度資格，或學術取向過強。 \\[6pt]
+  研究背景適合評估型工作，如培訓成效評估與人才評鑑工具設計。
+  &
+  人才分析工具更新快，需持續投入學習。 \\[6pt]
+  國際化企業重視雙語與跨文化人才。
+  &
+  職場中文溝通要求高，語言門檻可能成為篩選條件。
+\end{tabular}
+\end{center}
+
+\section{研討會}
+\begin{entrylist}
+  \entry
+    {05/2023}
+    {永續發展目標應用心理學國際研討會暨年會（TAPA），台灣}
+    {口頭發表}
+    {拖延症是否有解？以自我調節學習為基礎之「拖延心理學」課程設計與學習成效評估；負責統計分析與資料處理。}
+  \entry
+    {05/2022}
+    {視覺科學學會年會（VSS）}
+    {壁報發表}
+    {利用隨機森林演算法分類輕度腦創傷患者與對照組於視覺空間工作記憶任務中的腦電圖資料。}
+  \entry
+    {07/2019}
+    {第 15 屆亞太視覺研討會（APCV），大阪}
+    {壁報發表}
+    {中文句子閱讀中詞彙視覺複雜度分布對眼跳目標之影響。}
+  \entry
+    {08/2013}
+    {第 5 屆亞洲健康心理學大會，大田}
+    {壁報發表}
+    {認知行為治療對慢性疲勞症候群效果之統合分析。}
+  \entry
+    {05/2011}
+    {第 5 屆拉丁美洲心理學大會（ALAPSA），哈拉帕}
+    {口頭發表}
+    {Eurotest 心理計量分析：輕度認知障礙篩查測試。}
+\end{entrylist}
+
+\section{著作}
+\begin{entrylist}
+  \entry
+    {撰稿中}
+    {學術論文}
+    {國立成功大學、Universitat Jaume I 及辛辛那提大學}
+    {\textit{互動性調節空間轉換能力：來自視角依存VR心理旋轉任務的實證。}}
+  \entry
+    {撰稿中}
+    {學術論文}
+    {國立成功大學及新墨西哥大學}
+    {\textit{輕度腦創傷患者視覺空間工作記憶之腦電圖分類：受試者內膨脹、診斷虛無與留一受試者交叉驗證基準測試。}}
+  \entry
+    {撰稿中}
+    {學術論文}
+    {國立成功大學及國立政治大學}
+    {\textit{詞彙視覺複雜度分布對中文句子閱讀中眼跳目標之影響。}}
+  \entry
+    {2014}
+    {Avendaño-Prieto, B.L., Avendaño-Prieto, G., Cruz-Molina, W., \& Cárdenas-Avendaño, A.}
+    {\textit{Diversitas: Perspectivas en Psicología} 10(1), 13--27}
+    {非專業研究者多變量統計使用參考指南。}
+  \entry
+    {2014}
+    {Avendaño, B.L., Avendaño, X.A., \& Cruz-Molina, W.}
+    {\textit{Avances en Medición} 9, 58--72}
+    {Eurotest 失智篩查測試之哥倫比亞版本文化適應研究。}
+\end{entrylist}
+
+\section{應用專案}
+\begin{entrylist}
+  \entry
+    {2026}
+    {Scroll Master}
+    {速讀應用程式}
+    {協助使用者提升閱讀速度與理解力的速讀網頁應用程式。\href{https://scrollmaster.app/}{scrollmaster.app}}
+  \entry
+    {2025}
+    {Apex Fintech}
+    {演算法交易}
+    {金融服務介面開發。\href{https://apexfintech.net/}{apexfintech.net}}
+  \entry
+    {2024}
+    {Market Shift \& FVG}
+    {MQL5 市場指標與交易演算法}
+    {MetaTrader 5 市場結構與公允價值缺口偵測指標。\href{https://www.mql5.com/en/market/product/131053}{mql5.com}}
+  \entry
+    {2018}
+    {ICFES 全國學業表現評量演算法}
+    {哥倫比亞，波哥大}
+    {ICFES 專有演算法。}
+\end{entrylist}
+
+\end{document}

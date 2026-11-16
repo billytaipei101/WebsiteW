@@ -1,0 +1,11 @@
+# Site-specific strings (used by layouts/partials/navbar.html and widgets/about.html).
+# Everything else comes from the theme's own en.yaml.
+
+- id: languages_heading
+  translation: Languages
+
+- id: websites_heading
+  translation: Websites
+
+- id: language_switch
+  translation: Switch language
